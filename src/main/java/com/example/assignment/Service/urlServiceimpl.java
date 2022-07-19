@@ -63,7 +63,6 @@ public class urlServiceimpl implements UrlService {
    synchronized public Map<String, Integer> list(int pageNO, int size) {
 
         if (pageNO > 0 || size > 0) {
-
             Map<String, Integer> res = new LinkedHashMap<>();
             int start = (pageNO * size) - size;
             int last = pageNO * size;
